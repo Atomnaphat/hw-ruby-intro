@@ -3,11 +3,11 @@
 # Part 1
 
 def sum arr
-  # YOUR CODE HERE
+  arr.sum
 end
 
 def max_2_sum arr
-  # YOUR CODE HERE
+  puts sum(arr.max(2))
 end
 
 def sum_to_n? arr, n
@@ -17,11 +17,15 @@ end
 # Part 2
 
 def hello(name)
-  # YOUR CODE HERE
+  puts ("Hello:#{name}")
 end
 
 def starts_with_consonant? s
-  # YOUR CODE HERE
+  if s[0] != "a" and  s[0] != "e" and s[0] != "i" and s[0] != "o" and s[0] != "u"
+    return true
+  else
+    return false
+  end
 end
 
 def binary_multiple_of_4? s
@@ -33,3 +37,6 @@ end
 class BookInStock
 # YOUR CODE HERE
 end
+
+
+
