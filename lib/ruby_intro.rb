@@ -11,7 +11,16 @@ def max_2_sum arr
 end
 
 def sum_to_n? arr, n
-  # YOUR CODE HERE
+  bool = false
+  for i in (0..arr.length-1)
+       my_num = arr[i]
+
+       for j in (i+1..arr.length-1) do
+       if my_num + arr[j] == n
+           bool = true
+       end
+       end
+  end
 end
 
 # Part 2
@@ -35,7 +44,27 @@ end
 # Part 3
 
 class BookInStock
-# YOUR CODE HERE
+  def initialize(isbn,price)
+   @isbn =isbn
+   @price =price
+  end
+  def isbn=isbn
+   @isbn = isbn
+  end
+  def isbn
+   @isbn
+  end
+  def price=price
+   @price = price
+  end
+  def price
+   @price
+  end
+  def price_as_string
+   str_Price = "%0.2f" % @price.to_s
+   a = "$#{str_Price}"
+   return a
+  end
 end
 
 
